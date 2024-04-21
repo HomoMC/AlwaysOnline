@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "always-online",
+	"version": "${version}",
+	"name": "Always Online",
+	"description": "Keep your server online even Mojang's auth server is down!",
+	"authors": [
+		"HomoMC"
+	],
+	"contact": {
+		"homepage": "https://tryitands.ee/",
+		"sources": "https://github.com/HomoMC/AlwaysOnline"
+	},
+	"license": "AGPL-3.0",
+	"accessWidener": "alwaysonline.accesswidener",
+	"icon": "assets/always-online/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"io.wdsj.alwaysonline.AlwaysOnline"
+		]
+	},
+	"mixins": [
+		"always-online.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"owo": "*",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "io.wdsj.alwaysonline.mixin",
+	"refmap": "always-online-refmap.json",
+	"minVersion": "0.8",
+	"plugin": "io.wdsj.alwaysonline.mixin.AOMixinPlugin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [],
+	"server": [
+		"MixinServerLoginNetworkHandler"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
